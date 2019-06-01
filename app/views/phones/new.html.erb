@@ -1,0 +1,56 @@
+<%= form_for(@phone) do |f| %>
+	<div class="field">
+		<%= f.label "Name" %>
+		<%= f.text_field :name %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "Brand" %>
+		<%= f.text_field :brand %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "Year Released" %>
+		<%= f.text_field :year_released %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "Camera" %>
+		<%= f.text_field :camera %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "Mpixels" %>
+		<%= f.text_field :mpixels %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "Internal Storage" %>
+		<%= f.text_field :interna_stor %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "Sim Slots" %>
+		<%= f.text_field :sim_slots %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "Screen size" %>
+		<%= f.text_field :sc_size %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "Operating System" %>
+		<%= f.text_field :os %>
+	</div>
+	
+	<div class="field">
+		<%= f.label "Stock" %>
+		<%= f.text_field :stock %>
+	</div>
+	
+	<%=  f.submit "Submit" %>
+
+<% end %> 
+
+

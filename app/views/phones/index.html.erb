@@ -1,0 +1,45 @@
+
+<h1>Android Nang Bayan Inc.</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name &nbsp&nbsp</th>
+      <th>Brand &nbsp&nbsp</th>
+      <th>Year Released &nbsp&nbsp</th>
+	  <th>Camera &nbsp&nbsp</th>
+	  <th>Mpixels &nbsp&nbsp</th>
+	  <th>Internal Storage &nbsp&nbsp</th>
+	  <th>Sim Slots &nbsp&nbsp</th>
+	  <th>Screen size &nbsp&nbsp</th>
+	  <th>Operating System &nbsp&nbsp</th>
+	  <th>Stock &nbsp&nbsp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @phones.each do |phone| %>
+      <tr>
+        <td><%= phone.name %>&nbsp&nbsp</td>
+    	<td><%= phone.brand %>&nbsp&nbsp</td>
+    	<td><%= phone.year_released %>&nbsp&nbsp</td>
+    	<td><%= phone.camera %>&nbsp&nbsp</td>
+    	<td><%= phone.mpixels %>&nbsp&nbsp</td>
+    	<td><%= phone.interna_stor %>&nbsp&nbsp</td>
+    	<td><%= phone.sim_slots %>&nbsp&nbsp</td>
+    	<td><%= phone.sc_size %>&nbsp&nbsp</td>
+    	<td><%= phone.os %>&nbsp&nbsp</td>
+    	<td><%= phone.stock %>&nbsp&nbsp</td>
+		<td><a href="phones/<%= phone.id%>">VIEW</a>&nbsp</td>
+		<td><a href="phones/buy/<%= phone.id%>">BUY</a>&nbsp</td>
+      </tr>
+    <% end %>
+  </tbody>
+  
+  <a href="phones/new">CREATE NEW</a>
+</table>
+
+
+
+
